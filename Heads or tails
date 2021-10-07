@@ -1,0 +1,28 @@
+import time
+import random
+b=(0)
+print("Привет! Я программа написанная учеником 9А класса Горбуновым Александром")
+print("Я умею подкидывать монетку")
+time.sleep(1)
+while 1:
+	print("Напиши <Подкинь> чтобы начать")
+	a=(input())
+	if a in ("Подкинь","подкинь"):
+		break
+	if a not in ("Подкинь","подкинь"):
+		print("Я не совсем поняла. Давай ещё раз!")
+		time.sleep(1)
+while 2:
+	b=(random.randint(0,10))
+	if b>(5):
+		print("Орёл!")
+	if b<(5):
+		print("Решка!")
+	if b==(5):
+		print("Ребро!")
+	print(b)
+	c = input("Подкинуть ещё раз? Напиши <N> для выхода: ")
+	if c==("n"):
+		print("Завершаю работу...")
+		time.sleep(1.5)
+		break
